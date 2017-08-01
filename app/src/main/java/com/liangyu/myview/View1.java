@@ -1,0 +1,44 @@
+package com.liangyu.myview;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
+import android.view.View;
+
+/**
+ * Created by liangyu on 17-8-1.
+ */
+
+public class View1 extends View {
+    public View1(Context context) {
+        super(context);
+    }
+
+    public View1(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    public View1(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+    }
+
+
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        getLeft();
+    }
+
+
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+    }
+}
